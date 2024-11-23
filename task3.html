@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Attribute Demo</title>
+    <style>
+        iframe {
+            border: 1px solid #ccc;
+            width: 100%;
+            height: 300px;
+        }
+        .link-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML `target` Attribute Demo</h1>
+    <p>The target attribute specifies where to open the link.</p>
+
+    <div class="link-container">
+        <!-- Opens the link in the same tab -->
+        <a href="https://www.example.com" target="_self">Open in the Same Tab (default)</a>
+    </div>
+
+    <div class="link-container">
+        <!-- Opens the link in a new tab -->
+        <a href="https://www.google.com" target="_blank">Open in a New Tab</a>
+    </div>
+
+    <div class="link-container">
+        <!-- Opens the link in the parent frame -->
+        <a href="https://www.wikipedia.org" target="_parent">Open in the Parent Frame</a>
+    </div>
+
+    <div class="link-container">
+        <!-- Opens the link in the full window -->
+        <a href="https://www.github.com" target="_top">Open in the Full Window</a>
+    </div>
+
+    <div class="link-container">
+        <!-- Opens the link in a specific iframe -->
+        <a href="https://www.mozilla.org" target="myIframe">Open in the Below Iframe</a>
+    </div>
+
+    <iframe name="myIframe" title="Example Iframe"></iframe>
+</body>
+</html>
